@@ -1,4 +1,4 @@
-# Loan Data Analysis Dashboard using Microsoft Excel
+# Loan Performance  Analysis Dashboard using Microsoft Excel
 ##  TDI EXCEL CAPSTONE PROJECT      
 
 ## Project Scope:
@@ -10,16 +10,16 @@ This project focuses on analysing a loan dataset to identify patterns, optimize 
 •	An Excel dashboard summarizing key metrics and KPIs.
 
 
-Problem Statement:
+#### Problem Statement:
 Business Problem
 TDI Financial needs to optimize its loan approval process to minimize default risks and maximize profitability. High default rates from risky borrowers, unclear patterns in approvals, and inefficient risk assessment criteria require targeted solutions.
-Key Questions
+#### Key Questions
 •	Which borrower demographics and loan conditions are associated with higher default rates?
 •	How do interest rates impact loan performance?
 •	What patterns can be identified in loan approvals and rejections?
 •	What KPIs should TDI monitor to optimize performance?
 
-Data Cleaning and Transformation
+#### Data Cleaning and Transformation
 1.	Import the Dataset:
 o	Load the dataset into Excel.
 2.	Handle Missing Values:
@@ -31,7 +31,7 @@ o	Review the dataset for any data entry errors and correct them.
 5.	Standardize Data Formats:
 o	Ensure that all data is in a consistent format (e.g., dates, currency, percentages)
 
-Additional Data Cleaning Steps:
+#### Additional Data Cleaning Steps:
 •	Standardized Dates: Ensured all dates are in a consistent format.
 •	Removed Blanks: Addressed blank cells in the dataset.
 •	Proper Case: Converted employment titles to proper case.
@@ -50,8 +50,8 @@ excel
 =IF(U2 >= 20%, "High", IF(U2 >= 10%, "Medium", "Low"))
 
 
-Dashboard Features:
-KPI Section
+## Dashoard Features:
+### KPI Section
 1.	Total Loan Borrowers: Displays the total number of borrowers.
               38,574 borrowers.
 2.	Total Loan Repayment: Shows the cumulative amount repaid.
@@ -62,8 +62,8 @@ KPI Section
              14%.
 5.	Average Interest Rate: Displays the overall average interest rate.
              12%.
-________________________________________
-Charts and Visualizations
+
+### Charts and Visualizations
 1.	Loan Defaulters by Employment Length:
 o	Bar chart showing the number of defaulters based on employment length.
 o	Insight: Borrowers with employment lengths of 10+ years had the highest defaulters (45 cases).
@@ -78,33 +78,33 @@ o	Two visualizations:
 	Map: Displays loans distributed across states using colour intensity.
 	Bar Chart: Shows loan counts by state.
 o	Insight: Some states like California and Texas had significantly higher loan distributions.
-________________________________________
-Filters
+
+### Filters
 1.	Loan Status: Filter to view data for loans categorized as Charged Off, Current, or Fully Paid.
 2.	Grade: Filter to Analyse loans by borrower grade (A–G).
 
-Insights
-1. Total Loan Borrowers & Loan Repayment:
+### Insights
+#### 1. Total Loan Borrowers & Loan Repayment:
 •	Insight: There are 38,574 total loan borrowers, with a cumulative repayment of $473.0M. However, the average loan defaulter rate is high at 14%, indicating significant risk in the portfolio.
 •	Implication: This suggests a large portion of borrowers struggle to meet their repayment obligations.
-________________________________________
-2. Loan Defaulters by Employment Length:
+
+#### 2. Loan Defaulters by Employment Length:
 •	Insight: Borrowers with over 10 years of employment (45 defaulters) have the highest default rates. Surprisingly, borrowers with less than one year of employment also have high defaults (16 defaulters).
 •	Implication: Employment length does not consistently correlate with loan repayment reliability.
-________________________________________
-3. Loan Purpose by Income Level:
+
+#### 3. Loan Purpose by Income Level:
 •	Insight: Loans for debt consolidation and credit card purposes dominate across all income levels. High-income borrowers typically take loans for major purchases, while low-income borrowers rely heavily on loans for debt consolidation.
 •	Implication: Low-income borrowers may be struggling financially and are using loans to manage existing debts rather than for new opportunities.
-________________________________________
-4. Interest Rates by Loan Status:
+
+#### 4. Interest Rates by Loan Status:
 •	Insight: Loans with medium interest rates had the highest count of issued loans 84%, but higher interest rates result in a significant proportion of loans being "charged off."
 •	Implication: High interest rates may lead to higher default risks, especially for low-income borrowers.
-________________________________________
-5. Loan Distribution by State:
+
+#### 5. Loan Distribution by State:
 •	Insight: States like California and Texas have significantly higher loan distributions compared to others. However, default rates are also likely to be higher in these regions due to the sheer volume of loans.
 •	Implication: These states could represent both high-opportunity and high-risk regions for loans.
-________________________________________
-Recommendations:
+
+## Recommendations:
 1.	Risk Mitigation Strategies:
 o	Adjust loan approval criteria to include more robust credit score requirements, particularly for low-income and high-interest loans.
 o	Implement stricter conditions for borrowers with short employment histories or provide smaller loan amounts to minimize default risk.
@@ -115,8 +115,8 @@ o	Cap interest rates for high-risk borrowers to prevent "charged off" loans.
 o	Focus on targeted marketing and risk management in states like California and Texas to balance opportunity and risk.
 4.	Loan Purpose Adjustments:
 o	Encourage loans for productive purposes (e.g., education, business) over debt consolidation to enhance financial sustainability for borrowers.
-________________________________________
-Conclusion
+
+## Conclusion
 The dashboard provides a clear picture of TDI's loan performance. While the organization serves a large number of borrowers and generates significant repayments, the default rate of 14% indicates a need for improved risk management strategies. By refining loan approval criteria, adjusting interest rates, and focusing on specific high-risk regions, TDI can enhance profitability while minimizing default risks.
 
 
