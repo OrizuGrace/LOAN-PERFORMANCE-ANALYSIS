@@ -35,20 +35,20 @@ o	Review the dataset for any data entry errors and correct them.
 o	Ensure that all data is in a consistent format (e.g., dates, currency, percentages)
 
 ## Additional Data Cleaning Steps:
-•	Standardized Dates: Ensured all dates are in a consistent format.
-•	Removed Blanks: Addressed blank cells in the dataset.
-•	Proper Case: Converted employment titles to proper case.
-•	Converted abbreviations to full names: Home Ownership (e.g., "O" to "Own", "R" to "Rent", "MO" to "Mortgage").
-•	Verification Source Column: Standardized verification sources (e.g., "V" to "Verified", "SV" to "Source Verified", "Not V" to "Not Verified").
-•	Used XLOOKUP and TRIM functions to convert state codes to full names.
-•	Interest Rate and DTI to Percentage: Converted interest rates and debt-to-income ratios to percentage format.
-•	Default Indicator: Created a default indicator using the formula:
+*	Standardized Dates: Ensured all dates are in a consistent format.
+*	Removed Blanks: Addressed blank cells in the dataset.
+*	Proper Case: Converted employment titles to proper case.
+*	Converted abbreviations to full names: Home Ownership (e.g., "O" to "Own", "R" to "Rent", "MO" to "Mortgage").
+*	Verification Source Column: Standardized verification sources (e.g., "V" to "Verified", "SV" to "Source Verified", "Not V" to "Not Verified").
+*	Used XLOOKUP and TRIM functions to convert state codes to full names.
+*	Interest Rate and DTI to Percentage: Converted interest rates and debt-to-income ratios to percentage format.
+*	Default Indicator: Created a default indicator using the formula:
 excel
 =IF(K2="Charged Off", 1, 0)
-•	Income Segmentation: Segmented income using the formula:
+*	Income Segmentation: Segmented income using the formula:
 excel
 =IF(R3 >= 1000000, "High Income", IF(R3 >= 100000, "Medium Income", "Low Income"))
-•	Interest Rate Segmentation: Segmented interest rates using the formula:
+*	Interest Rate Segmentation: Segmented interest rates using the formula:
 excel
 =IF(U2 >= 20%, "High", IF(U2 >= 10%, "Medium", "Low"))
 
