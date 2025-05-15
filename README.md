@@ -2,24 +2,27 @@
 ##  TDI EXCEL CAPSTONE PROJECT      
 
 ## Project Scope:
-### Objective
+
+## Objective
 This project focuses on analysing a loan dataset to identify patterns, optimize loan approval criteria, and evaluate loan performance based on borrower demographics, risk levels, and other key factors. Additionally, the goal is to visualize insights through an Excel dashboard.
-#### Key Deliverables
+
+## Key Deliverables
 •	Detailed analysis of loan performance by interest rates, loan status, and risk categories.
 •	Recommendations for loan approval optimization and risk mitigation.
 •	An Excel dashboard summarizing key metrics and KPIs.
 
 
-#### Problem Statement:
-Business Problem
+## Problem Statement:
+## Business Problem
 TDI Financial needs to optimize its loan approval process to minimize default risks and maximize profitability. High default rates from risky borrowers, unclear patterns in approvals, and inefficient risk assessment criteria require targeted solutions.
-#### Key Questions
+
+## Key Questions
 •	Which borrower demographics and loan conditions are associated with higher default rates?
 •	How do interest rates impact loan performance?
 •	What patterns can be identified in loan approvals and rejections?
 •	What KPIs should TDI monitor to optimize performance?
 
-#### Data Cleaning and Transformation
+## Data Cleaning and Transformation
 1.	Import the Dataset:
 o	Load the dataset into Excel.
 2.	Handle Missing Values:
@@ -31,21 +34,21 @@ o	Review the dataset for any data entry errors and correct them.
 5.	Standardize Data Formats:
 o	Ensure that all data is in a consistent format (e.g., dates, currency, percentages)
 
-#### Additional Data Cleaning Steps:
-•	Standardized Dates: Ensured all dates are in a consistent format.
-•	Removed Blanks: Addressed blank cells in the dataset.
-•	Proper Case: Converted employment titles to proper case.
-•	Converted abbreviations to full names: Home Ownership (e.g., "O" to "Own", "R" to "Rent", "MO" to "Mortgage").
-•	Verification Source Column: Standardized verification sources (e.g., "V" to "Verified", "SV" to "Source Verified", "Not V" to "Not Verified").
-•	Used XLOOKUP and TRIM functions to convert state codes to full names.
-•	Interest Rate and DTI to Percentage: Converted interest rates and debt-to-income ratios to percentage format.
-•	Default Indicator: Created a default indicator using the formula:
+## Additional Data Cleaning Steps:
+*•	Standardized Dates: Ensured all dates are in a consistent format.
+*•	Removed Blanks: Addressed blank cells in the dataset.
+*•	Proper Case: Converted employment titles to proper case.
+*•	Converted abbreviations to full names: Home Ownership (e.g., "O" to "Own", "R" to "Rent", "MO" to "Mortgage").
+*•	Verification Source Column: Standardized verification sources (e.g., "V" to "Verified", "SV" to "Source Verified", "Not V" to "Not Verified").
+*•	Used XLOOKUP and TRIM functions to convert state codes to full names.
+*•	Interest Rate and DTI to Percentage: Converted interest rates and debt-to-income ratios to percentage format.
+*•	Default Indicator: Created a default indicator using the formula:
 excel
 =IF(K2="Charged Off", 1, 0)
-•	Income Segmentation: Segmented income using the formula:
+*•	Income Segmentation: Segmented income using the formula:
 excel
 =IF(R3 >= 1000000, "High Income", IF(R3 >= 100000, "Medium Income", "Low Income"))
-•	Interest Rate Segmentation: Segmented interest rates using the formula:
+*•	Interest Rate Segmentation: Segmented interest rates using the formula:
 excel
 =IF(U2 >= 20%, "High", IF(U2 >= 10%, "Medium", "Low"))
 
